@@ -43,7 +43,7 @@ export default function App() {
       </aside>
       <main>
         <div className="topbar">
-          <div><small>{user.role === 'tutor' ? 'Tutor workspace' : 'Student workspace'}</small></div>
+          <div><span styles={{fontSize:"40px",fontWeight:"bold"}}>{user.role === 'tutor' ? 'Tutor workspace' : 'Student workspace'}</span></div>
           <div className="who"><div><b>{user.name}</b><small>{user.email}</small></div><Avatar name={user.name} size={42} /></div>
         </div>
         <div className="page" key={tab}>
